@@ -1,14 +1,20 @@
-let adding = 
-React.createElement("h1",
-{id:"grandfather"}, "Dadaji",
+//creating parent//
+const parent = React.createElement("div", { id: "parent" }, [
 
-React.createElement("p", 
-{id:'father'}, "papaji",
+    //creating child 1//
+    React.createElement("div", { id: "child" }, [
+        React.createElement("h1", {}, "I am an h1 tag"),
+        React.createElement("h2", {}, "I am an h2 tag"),
+    ]),
+    //creating child 2//
+    React.createElement("div", { id: "child2" }, [
+        React.createElement("h1", {}, "I am an h1 tag again"),
+        React.createElement("h2", {}, "I am an h2 tag again"),
+    ]),
+]);
 
-React.createElement("p",
-{id:'betaji'}, "beta"))
-);
+console.log(parent);
 
-let adder = ReactDOM.createRoot(document.getElementById("family"));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
-adder.render(adding);
+root.render(parent);
