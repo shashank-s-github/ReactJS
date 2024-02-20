@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/shashank-s-github/ReactJS/issues"
   },
-  "homepage": "https://github.com/shashank-s-github/ReactJS#readme"
+  "homepage": "https://github.com/shashank-s-github/ReactJS#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
 }
