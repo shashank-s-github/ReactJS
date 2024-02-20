@@ -1,0 +1,22 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "\"using npm for the first time\"",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashank-s-github/ReactJS.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Shashank Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shashank-s-github/ReactJS/issues"
+  },
+  "homepage": "https://github.com/shashank-s-github/ReactJS#readme"
+}
