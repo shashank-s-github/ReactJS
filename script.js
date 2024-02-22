@@ -1,22 +1,41 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-//creating parent//
-const parent = React.createElement("div", { id: "parent" }, [
 
-    //creating child 1//
-    React.createElement("div", { id: "child" }, [
-        React.createElement("h1", {}, "mai hu bada beta"),
-        React.createElement("h2", {}, "I am an h2 tag"),
-    ]),
-    //creating child 2//
-    React.createElement("div", { id: "child2" }, [
-        React.createElement("h1", {}, "I am an h1 tag again"),
-        React.createElement("h2", {}, "I am an h2 tag again"),
-    ]),
-]);
+// const heading = React.createElement("h1", { id: "btn" }, "Clickme from createReact");
 
-console.log(parent);
+// console.log(heading)
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+// const jsxHeading = <h1 id="heading">Clickme from JSX</h1>
 
-root.render(parent);
+// console.log(jsxHeading)
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// const root2 = ReactDOM.createRoot(document.getElementById("root-2"));
+
+// root.render(heading)
+// root2.render(jsxHeading)
+
+
+const YourName = () => {
+    return (
+        <div id='heirarchy'>
+            <h1 className="first">Shashank</h1>
+            <h1 className="last">Sharma</h1>
+        </div>
+    )
+}
+
+const YourName2 = () => {
+    return (
+        <div id='heirarchy'>
+           <YourName />
+            <h1 className="first">Shashank</h1>
+            <h1 className="last">Sharma</h1>
+        </div>
+    )
+}
+
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(<YourName2 />);

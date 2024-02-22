@@ -4,6 +4,8 @@
   "description": "\"using npm for the first time\"",
   "main": "script.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
