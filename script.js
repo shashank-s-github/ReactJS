@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+//Creating components using Reactjs//
+
 const Header = () => {
     return (
         <div id="nav">
@@ -949,7 +951,7 @@ const Mainapp = () => {
     return (
         <div>
             <Header />
-            <Rescontainer />
+            {/* <Rescontainer /> */}
         </div>
     )
 }
